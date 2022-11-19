@@ -4,11 +4,12 @@ const cors = require("cors");
 const cookieSession = require("cookie-session");
 const app = express();
 
-var corsOptions = {
-  origin: "https://inventoryangular.s3.jp-tok.cloud-object-storage.appdomain.cloud"
-};
+// var corsOptions = {
+//   origin: "https://inventoryangular.s3.jp-tok.cloud-object-storage.appdomain.cloud"
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
+app.options('*', cros());
 
 // parse requests of content-type - application/json
 app.use(express.json());
