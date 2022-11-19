@@ -5,7 +5,7 @@ const cookieSession = require("cookie-session");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:4200"
+  origin: "https://inventoryangular.s3.jp-tok.cloud-object-storage.appdomain.cloud"
 };
 
 app.use(cors(corsOptions));
